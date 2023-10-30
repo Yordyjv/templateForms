@@ -1,0 +1,14 @@
+<section>
+    <h1> {{message}} </h1>
+
+    <button mat-raised-button color="primary">
+        <a routerLink=""routerLinkActive="activeLink"
+        [routerLinkActiveOptions]="{exact: true}">Return to form</a>
+    </button>
+</section>
+
+<!--
+Results page should display something to the user that includes the passed in information from the form
+There should be something that is displayed conditionally based on what the user selected from 
+your dropdown, radio buttons, or checkboxes. You could use an ngIf or ngSwitch to do this
+-->

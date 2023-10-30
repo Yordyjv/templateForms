@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.wide{
+    width: 500px;
+    height: 100px;
+}
+
+
+.tall{
+    width: 300px;
+    height: 550px;
+}
+
+
+mat-card{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-form-field{
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    left: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

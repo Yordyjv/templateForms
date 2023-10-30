@@ -1,0 +1,56 @@
+<mat-card class="wide">
+    <h1> Please Fill in Your Favorite Book and Author! </h1>
+</mat-card>
+
+<h1></h1>
+
+<mat-card class="tall">
+    <form (ngSubmit)="submitForm(bookForm)" #bookForm="ngForm" >
+        <mat-form-field>
+            <mat-label>Title</mat-label>
+                <input matInput type="text" id="title" name="title" ngModel>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Author</mat-label>
+            <input matInput type="text" id="author" name="author" ngModel>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Genre</mat-label>
+            <input matInput type="text" id="genre" name="genre" ngModel>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Quote</mat-label>
+            <input matInput type="text" id="quote" name="quote" ngModel>
+        </mat-form-field>
+        
+        <button mat-raised-button color="primary">
+            <a routerLink="results"routerLinkActive="activeLink"
+            [routerLinkActiveOptions]="{exact: true}">Submit</a>
+        </button>
+
+
+    </form>
+    
+</mat-card>
+
+<h1></h1> 
+
+
+
+<!--
+
+Form must have at least 4 different input types
+One dropdown select, radio buttons, or checkboxes. Must be displayed using ngFor
+Every input must have a corresponding label (aria label???)
+At least one input must be required
+At least one input must have another validator
+Each validator must show an error if invalid
+See "validate form input" in the Angular Forms link on AsuLearn
+At least one input must have a placeholder
+On form submission, navigate to results page, passing at least one
+    piece of information from the form or information calculated using the form. 
+    You will have to navigate programmatically.
+-->
